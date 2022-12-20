@@ -42,7 +42,7 @@
     font-family: inherit;
     font-weight: 600;
     font-size: 16px;
-    line-height: 1,18;
+    line-height: 1.18;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     background-color: #4D5AE5;
@@ -58,7 +58,7 @@
     font-family: inherit;
     font-weight: 600;
     font-size: 16px;
-    line-height: 1,5;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
     color: var(--btn-portfolio-color);
@@ -75,7 +75,7 @@
     font-family: 'Raleway' sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1,33;
+    line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--logo-up-color);
@@ -84,7 +84,7 @@
     font-family: 'Raleway' sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1,16;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--logo-down-color);
@@ -97,7 +97,7 @@
 .navigation{
     font-weight: 600;
     font-size: 16px;
-    line-height: 1,5;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
@@ -109,7 +109,7 @@
 .connection{
     font-weight: 400;
     font-size: 16px;
-    line-height: 1,5;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
@@ -121,7 +121,7 @@
 
 .footer-text{
     font-size: 16px;
-    line-height: 1,5;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC;
 }
@@ -137,22 +137,32 @@
 .hero-title{
     font-weight: 600;
     font-size: 56px;
-    line-height: 1,07;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--hero-title-color);
     background-color: var(--hero-background-color);
 }
 
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+    
 .skills-title{
     font-weight: 600;
     font-size: 20px;
-    line-height: 1,2;
+    line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
 .skills-text{
     font-size: 16px;
-    line-height: 1,5;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--features-paragraf-color);
 }
@@ -160,7 +170,7 @@
 .galery-title{
     font-weight: 600;
     font-size: 36px;
-    line-height: 1,11;
+    line-height: 1.11;
     letter-spacing: 0.02em;
 }
 
@@ -171,21 +181,20 @@
 .team-title{
     font-weight: 600;
     font-size: 36px;
-    line-height: 1,11;
+    line-height: 1.11;
     letter-spacing: 0.02em;
 }
 
 .name{
     font-weight: 600;
     font-size: 20px;
-    line-height: 1,2;
+    line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
 .job{
-    font-weight: 400;
     font-size: 16px;
-    line-height: 1,5;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--job-color);
 }
@@ -199,14 +208,13 @@
 .name-product{
     font-weight: 600;
     font-size: 20px;
-    line-height: 1,2;
+    line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
 .type-product{
-    font-weight: 400;
     font-size: 16px;
-    line-height: 1,5;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--type-product-collor);
     }
