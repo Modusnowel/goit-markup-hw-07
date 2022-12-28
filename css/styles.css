@@ -23,6 +23,28 @@
 
 
 
+/*------------------cansalation-default-styles------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.img{
+    display: block;
+}
+
 
 /*-----------------------main-regulation------------------------*/
 .body{
@@ -31,14 +53,47 @@
     background-color: var(--primary-bg-color);
 }
 
-.list{
-    list-style: none;
-}
+
 .link{
     text-decoration: none;
 }
 
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 1px #4454e3;
+  }
+
+.header{
+    border-bottom: 1px solid #E7E9FC;
+}
+
+  .flex-header{
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+.site-navigation{
+    margin-right: auto;
+}
+
+  .flex-nav{
+    display: flex;
+    gap: 40px;
+  }
+
+  .flex-connection{
+    display: flex;
+    gap: 40px;
+  }
+
 .hero-btn{
+    min-width: 169px;
+    height: 56px;
     font-family: inherit;
     font-weight: 600;
     font-size: 16px;
@@ -48,6 +103,9 @@
     background-color: #4D5AE5;
     border: none;
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px; 
+    padding: 0;
 }
 .hero-btn:hover,
 .hero-btn:focus{
@@ -55,6 +113,7 @@
 }
 
 .portfolio-btn{
+    padding: 12px 24px;
     font-family: inherit;
     font-weight: 600;
     font-size: 16px;
@@ -63,12 +122,25 @@
     cursor: pointer;
     color: var(--btn-portfolio-color);
     background: var(--btn-bg-portfolio-color);
-    border: #E7E9FC;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus{
     color: #FFFFFF;
     background-color: #4D5AE5;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    
+}
+
+.portfolio-btn-flex{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 72px;
+    justify-content: center;
 }
 
 .logo-up{
@@ -79,8 +151,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--logo-up-color);
+    margin-right: 76px;
 }
 .logo-down{
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -88,6 +162,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--logo-down-color);
+    margin-bottom: 16px;
 }
 .logo-accent{
     text-transform: uppercase;
@@ -119,12 +194,47 @@
     color: #404BBF;
 }
 
+.flex-skills{
+    display: flex;
+    gap: 24px;
+}
+
+.galery-flex{
+    display: flex;
+    gap: 24px;
+}
+
+.team-flex{
+    display: flex;
+    gap: 24px;
+}
+
+.team-card{
+    display: block;
+    width: calc((100%-72px)/4);
+    background-color: var(--main-background-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.card-container{
+    align-items: center;
+    text-align: center;
+    padding: 32px 16px;
+}
+
 .footer-text{
+    max-width: 264px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC;
 }
+.footer-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .footer{
     background-color: var(--footer-background-color);
 }
@@ -132,7 +242,13 @@
 
 /*----------------------main-page---------------------*/
 
-
+.hero-section{   
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    margin: auto;
+    background-color: var(--hero-background-color);
+}
 
 .hero-title{
     font-weight: 600;
@@ -140,7 +256,11 @@
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--hero-title-color);
-    background-color: var(--hero-background-color);
+    margin-bottom: 48px;
+}
+.features-section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .visually-hidden {
@@ -154,35 +274,50 @@
 }
     
 .skills-title{
-    font-weight: 600;
+    font-weight: 500px;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    color: var(--primary-text-color);
 }
 
 .skills-text{
+    width: 264px;
+    height: 72px; 
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--features-paragraf-color);
 }
-
+.galery-section{
+    padding-bottom: 120px
+}
 .galery-title{
+    text-align: center;
     font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
+    margin-bottom: 72px;
+    color: var(--primary-text-color);
 }
 
 .team-section{
     background-color: var(--team-background-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-title{
+    text-align: center;
     font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
+    margin-bottom: 72px;
+    color: var(--primary-text-color);
+
 }
 
 .name{
@@ -190,7 +325,9 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-}
+    color: var(--primary-text-color);
+    margin-bottom: 8px;
+}   
 
 .job{
     font-size: 16px;
@@ -202,7 +339,7 @@
 
 
 
-/*--------------------poetfolio-page-------------*/
+/*--------------------portfolio-page-------------*/
 
 
 .name-product{
@@ -210,6 +347,10 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: var(--primary-text-color);
 }
 
 .type-product{
@@ -217,4 +358,35 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--type-product-collor);
+    padding-left: 16px;
+    padding-right: 16px;
     }
+
+.portfolio-section{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.portfolio-gallery-flex{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    
+}
+
+.portfolio-card{   
+    width: calc((100% - 48px) / 3);
+    background-color: var(--main-background-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.card-portfolio-container{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: var(--main-background-color);
+    
+}
+
+
