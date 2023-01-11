@@ -16,9 +16,10 @@
     --navigation: #2E2F42 ;
     --type-product-collor: #434455;
     --main-background-color: #FFFFFF;
-    --team-background-color: #f4f4fd;
+    --light-background-color: #f4f4fd;
     --footer-background-color: #2E2F42;
-
+    --customers-color: #8E8F99;
+    --hover-green:#31D0AA;
 }
 
 
@@ -223,6 +224,11 @@ ul {
     padding: 32px 16px;
 }
 
+.footer-section{
+    display: flex;
+    gap: 120px;
+}
+
 .footer-text{
     max-width: 264px;
     font-size: 16px;
@@ -238,6 +244,34 @@ ul {
     background-color: var(--footer-background-color);
 }
 
+.footer-social-paragraf{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-background-color);
+    margin-bottom: 16px;
+}
+
+.foot-icons{
+    display: flex;
+    gap: 16px;
+}
+
+.foot-social-item{
+    width: calc((100% - 48px) / 4);
+}
+
+.foot-link{
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.foot-link:hover, .foot-link:focus {
+    background-color: var(--hover-green);
+}
+
 
 /*----------------------main-page---------------------*/
 
@@ -247,6 +281,12 @@ ul {
     padding-bottom: 188px;
     margin: auto;
     background-color: var(--hero-background-color);
+    max-width: 1440px;
+    background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../img/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
 .hero-title{
@@ -272,6 +312,16 @@ ul {
     width: 1px;
 }
     
+.icon-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: var(--light-background-color)
+}
+
 .skills-title{
     font-weight: 500px;
     font-size: 20px;
@@ -303,9 +353,32 @@ ul {
 }
 
 .team-section{
-    background-color: var(--team-background-color);
+    background-color: var(--light-background-color);
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    
+
+}
+
+.card-link{
+    padding: 12px;
+    background-color: var(--accent-color);
 }
 
 .team-title{
@@ -333,9 +406,50 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--job-color);
+    margin-bottom: 8px;
+}
+
+.customers-section{
+    padding-top: 130px;
+    padding-bottom: 120px;
 }
 
 
+.customers-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    margin-bottom: 72px;
+    color: var(--primary-text-color);
+}
+
+.cust-list{
+    width: calc((100% - 130px) / 6);
+
+}
+
+    .customer-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 32px;
+        fill: var(--customers-color);
+        border: 1px solid var(--customers-color);
+        border-radius: 4px;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.customer-link:hover .icon-customer,
+.customer-link:focus .icon-customer{
+    fill: var(--accent-color);
+}
 
 
 /*--------------------portfolio-page-------------*/
@@ -377,13 +491,22 @@ ul {
 .portfolio-card{   
     width: calc((100% - 48px) / 3);
     background-color: var(--main-background-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-card:hover,
+.portfolio-card:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+    cursor: pointer;
 }
 
 .card-portfolio-container{
     padding: 32px 16px;
     background-color: var(--main-background-color);
+    
     
 }
 
