@@ -20,6 +20,7 @@
     --footer-background-color: #2E2F42;
     --customers-color: #8E8F99;
     --hover-green:#31D0AA;
+    --transition: cubic-bezier(0.4, 0, 0.2, 1), 500ms;
 }
 
 
