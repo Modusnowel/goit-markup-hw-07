@@ -450,7 +450,9 @@
                         role="group"
                         aria-labelledby="form-heading">
                         <div class="group">
-                            <label class="label-name" for="name">Name
+                            <div class="label-wrap">
+                                <label class="label-name" for="name">Name</label>
+                            </div>
                                 <div class="input-wrap">
                                     <input 
                                     id="name" 
@@ -466,7 +468,9 @@
                                 </div> 
                         </div>
                         <div class="group">
-                            <label for="tel" class="label">Phone
+                            <div class="label-wrap">
+                                <label for="tel" class="label">Phone</label>
+                            </div>
                                 <div class="input-wrap">
                                     <input 
                                     id="tel" 
@@ -478,11 +482,12 @@
                                     <svg class="icon" height="13" width="13">
                                     <use href="./img/symbol-defs (1).svg#icon-phone"></use>
                                     </svg>
-                                    </label>
                                 </div>
                         </div>
                         <div class="group">
-                            <label for="email" class="label">Email
+                            <div class="label-wrap">
+                                <label for="email" class="label">Email</label>
+                            </div>
                                 <div class="input-wrap">
                                     <input 
                                     id="email" 
@@ -493,11 +498,12 @@
                                     <svg class="icon" height="15" width="18">
                                     <use href="./img/symbol-defs (1).svg#icon-email"></use>
                                     </svg>
-                                </div>
-                            </label>    
+                                </div>    
                         </div>
                         <div class="group">
-                            <label for="comment" class="label">Comment
+                            <div class="label-wrap">
+                                <label for="comment" class="label">Comment</label>
+                            </div>
                                 <div class="input-wrap">
                                         <textarea
                                         class="input-textarea"
@@ -506,13 +512,11 @@
                                         placeholder="Text input"
                                         rows="6"
                                         ></textarea>
-                                </div>
-                            </label>    
+                                </div>   
                         </div>
                     </div>
-                    <div class="group"> 
+                    <div class="group-privacy"> 
                         <div class="checkbox-label">
-                            
                                 <input
                                 id="privacy"
                                 class="checkbox is-hidden"
@@ -533,8 +537,7 @@
                     </div>
                     <div class="btn-modal">
                         <button class="button-submit" type="submit">Send</button>
-                    </div>
-                         
+                    </div>  
                 </form>    
             </div>    
         </div>
