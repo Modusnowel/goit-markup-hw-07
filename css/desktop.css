@@ -1,0 +1,84 @@
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .flex-connection{
+            display: flex;
+            gap: 40px;
+    }
+    .icon-logo{
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 0;
+        margin-bottom: 8px;
+        border-radius: 4px;
+        background-color: var(--light-background-color)
+    }
+    .hero-section{
+        background-image:  linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../img/people-office.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-section {
+        background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url('../img/people-office-2x.jpg');
+    }
+    }
+
+    .hero-title{
+        margin-bottom: 48px;
+    }
+    .skills-title{
+        font-weight: 500px;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .skills-text{
+        font-weight: 400px;
+    }    
+    .skills-text{
+        width: 264px;
+    }
+    .galery-section{
+        display: block;
+    }
+    .team-section> .container{
+        padding-left: 12px;
+        padding-right: 12px;
+        width: 1200px;
+    }
+    .team-section{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .team-card{
+        width: calc((100% - 72px)/ 4);
+    } 
+    .list-container {
+        gap: 24px;
+    }
+    .customers-section{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .cust-list{
+        width: calc((100% - 130px) / 6);
+    }
+    
+    .footer{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .footer-section{
+        flex-wrap: nowrap;
+    }
+    .footer-text{
+        max-width: max-content;
+    }
+
+  }

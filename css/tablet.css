@@ -1,0 +1,101 @@
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .site-navigation{
+        display: block;
+        margin-right: auto;
+    }
+    
+    .flex-nav{
+        display: flex;
+        gap: 40px;
+    }
+    
+    
+    .conection-none{
+        display: block;
+        
+    }
+
+    .menu-open{
+        display: none;
+    }
+
+    .hero-section{ 
+        padding-bottom: 108px;
+        background-image:  linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../img/Hero-bg-tablet.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-section {
+        background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url('../img/Hero-bg-tablet-2x.jpg');
+    }
+    }
+    .hero-title{
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 40px;
+    }    
+    .skills-title{
+        text-align: left;
+    }
+    .skills-text{
+        width: 356px;
+        
+    }
+    .team-section> .container{
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 582px;
+    }
+
+    .team-section{
+        padding-bottom: 104px;
+    }
+    .team-flex{
+        display: flex;
+        column-gap: 24px;
+        row-gap: 72px;
+       
+    }
+    .team-card{
+        width: calc((100% - 24px)/ 2);
+    } 
+    .customer-list-container {
+        column-gap: 24px;
+    }
+    .cust-list{
+        width: calc((100% - 48px) / 3);
+    
+    }
+    .customer-link{
+        padding: 16px 32px;
+    }
+    .footer-section{
+        flex-direction: row;
+        align-items: start; 
+        text-align: left;
+    }
+    .footer-section-first{
+        margin-right: 120px;
+    }
+    
+    .foot-section-second{
+        margin-right: 80px;
+    }
+    .email-subscribe{
+    width: 264px;
+    }
+    .subscribe-title{
+        text-align: left;
+    }
+    .subscribe-form{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+  }
