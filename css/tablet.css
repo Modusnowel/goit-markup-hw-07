@@ -3,6 +3,13 @@
         max-width: 768px;
     }
 
+    .header{
+        padding-bottom: 22px;
+    }
+    .navigation.current::after {
+        bottom: -38px;
+    }
+
     .site-navigation{
         display: block;
         margin-right: auto;

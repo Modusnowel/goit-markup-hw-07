@@ -677,14 +677,15 @@ ul {
     padding: 24px 24px 40px 40px;
     transform: scaleY(1);
     transition: var(--main-transition);
+    overflow: auto;
   }
   
-  .mob-menu > .container {
+  .mob-menu > .container-mob {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    overflow: auto;
+    gap: 288px;
+    
   }
   
   .menu-close-btn {
@@ -699,7 +700,7 @@ ul {
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
   }
   
   .menu-close-btn:focus,
@@ -793,7 +794,7 @@ ul {
     padding-bottom: 112px;
     margin: auto;
     background-color: var(--hero-background-color);
-    max-width: 1440px;
+    
     background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../img/Hero-bg-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -818,8 +819,8 @@ ul {
     margin-bottom: 72px;
 }
 .features-section{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .visually-hidden {
@@ -994,10 +995,12 @@ ul {
 }
 
     .customer-link {
+        width: 168px;
+        height: 88px;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 16px 40px;
+        padding: 16px 32px;
         fill: var(--customers-color);
         border: 1px solid var(--customers-color);
         border-radius: 4px;

@@ -1,8 +1,14 @@
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1152px;
-        padding-left: 12px;
-        padding-right: 12px;
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header{
+        padding-bottom: 28px;
+    }
+    .navigation.current::after {
+        bottom: -31px;
     }
     .flex-connection{
             display: flex;
@@ -19,6 +25,9 @@
         background-color: var(--light-background-color)
     }
     .hero-section{
+        padding-top: 188px;
+        padding-bottom: 188px;
+        max-width: 1440px;
         background-image:  linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../img/people-office.jpg);
     }
 
@@ -33,6 +42,11 @@
     .hero-title{
         margin-bottom: 48px;
     }
+    .features-section{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    
     .skills-title{
         font-weight: 500px;
         font-size: 20px;
