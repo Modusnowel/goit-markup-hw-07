@@ -4,10 +4,10 @@
     }
 
     .header{
-        padding-bottom: 22px;
+        padding-bottom: 10px;
     }
     .navigation.current::after {
-        bottom: -38px;
+        bottom: -20px;
     }
 
     .site-navigation{
@@ -76,12 +76,10 @@
         column-gap: 24px;
     }
     .cust-list{
-        width: calc((100% - 48px) / 3);
+        width: calc((100% - 232px) / 3);
     
     }
-    .customer-link{
-        padding: 16px 32px;
-    }
+    
     .footer-section{
         flex-direction: row;
         align-items: start; 

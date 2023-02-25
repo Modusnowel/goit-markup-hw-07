@@ -81,7 +81,7 @@
         padding-bottom: 120px;
     }
     .cust-list{
-        width: calc((100% - 130px) / 6);
+        width: calc((100% - 120px) / 6);
     }
     
     .footer{
